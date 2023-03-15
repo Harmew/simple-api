@@ -5,13 +5,17 @@ import cors from "cors";
 
 import { userRoute } from "./src/routes/userRoute";
 
+import { corsConfig } from "./src/global/corsConfig";
+import { timerMiddleware } from "./src/middleware/timerMiddleware.js";
+
 dotenv.config();
 
 const app = express();
 const port = process.env.PORT;
 
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors(corsConfig));
+app.use(timerMiddleware);
 
 app.use("/api/users", userRoute);
 
