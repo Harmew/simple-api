@@ -19,4 +19,3 @@ após isso adicione a porta no .env
 e por fim rode
 
     npm run dev
-# simple-api
