@@ -93,7 +93,9 @@ userRoute.put("/:id", async (req: Request, res: Response) => {
       .catch(() => {
         res.status(400).send({ message: "Problema em atualizar o usuário" });
       });
-  } catch (err) {}
+  } catch (err) {
+    res.status(400).send({ message: "Problema em atualizar o usuário" });
+  }
 });
 
 // DELETE
