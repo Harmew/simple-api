@@ -1,9 +1,5 @@
 import express from "express";
-import {
-  authMiddleware,
-  logoutMiddleware,
-} from "../middleware/auth.middleware";
-import { login } from "../controllers/auth.controller";
+import { authMiddleware } from "../middleware/auth.middleware";
 import {
   getUsers,
   getUserById,
@@ -13,10 +9,6 @@ import {
 } from "../controllers/user.controller";
 
 export const userRoute = express.Router();
-
-// Auth Routes (Public)
-userRoute.post("/auth/login", login);
-userRoute.post("/auth/logout", logoutMiddleware);
 
 // User Routes (Public)
 userRoute.post("/users", createUser);

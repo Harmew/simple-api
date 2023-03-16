@@ -6,6 +6,7 @@ import helmet from "helmet";
 import morgan from "morgan";
 
 import { userRoute } from "./src/routes/userRoute";
+import { authRoute } from "./src/routes/authRoute";
 
 import { corsConfig } from "./src/global/corsConfig";
 
@@ -21,6 +22,7 @@ app.use(bodyParser.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.use("/api/", userRoute);
+app.use("/api/", authRoute);
 
 app.use((err: Error, req: Request, res: Response, next: NextFunction) => {
   console.log(err.stack);
