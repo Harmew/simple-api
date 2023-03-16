@@ -104,7 +104,9 @@ exports.userRoute.put("/:id", (req, res) => __awaiter(void 0, void 0, void 0, fu
             res.status(400).send({ message: "Problema em atualizar o usuário" });
         });
     }
-    catch (err) { }
+    catch (err) {
+        res.status(400).send({ message: "Problema em atualizar o usuário" });
+    }
 }));
 // DELETE
 exports.userRoute.delete("/:id", (req, res) => __awaiter(void 0, void 0, void 0, function* () {
