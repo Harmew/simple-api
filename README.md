@@ -11,7 +11,3 @@ em sequencia faça o install das dependencias do projeto
 inicie o servidor
 
     npm start
-
-comandos dos prisma para Dev
-
-    npx prisma migrate dev --name init
