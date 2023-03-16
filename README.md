@@ -1,12 +1,8 @@
 # Configuração Inicial
 
-primeiro tenha o typescript e o nodemon instalado globalmente na sua maquina
+primeiro o install das dependencias do projeto
 
-    npm install i -g typescript nodemon
-
-em sequencia faça o install das dependencias do projeto
-
-    npm install
+    npm ci
 
 inicie o servidor
 
