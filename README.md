@@ -1,12 +1,8 @@
 # Configuração Inicial
 
-primeiro tenha o typescript e o nodemon instalado globalmente na sua maquina
+primeiro install das dependencias do projeto
 
-    npm install i -g typescript nodemon
-
-em sequencia faça o install das dependencias do projeto
-
-    npm install
+    npm ci
 
 inicie o servidor
 
@@ -15,3 +11,5 @@ inicie o servidor
 comandos auxiliares
 
     npx prisma migrate dev --name init
+
+    npm run dev
