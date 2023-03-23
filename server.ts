@@ -14,4 +14,4 @@ export const app = express();
 app.use(bodyParser.json());
 app.use(cors(corsConfig));
 
-app.use("/api/users", userRoute);
+app.use("/api/", userRoute);

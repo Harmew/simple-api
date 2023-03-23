@@ -11,4 +11,4 @@ dotenv.config();
 exports.app = express();
 exports.app.use(bodyParser.json());
 exports.app.use(cors(corsConfig));
-exports.app.use("/api/users", userRoute);
+exports.app.use("/api/", userRoute);
